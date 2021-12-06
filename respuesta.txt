@@ -1,0 +1,1 @@
+Por limpieza en su sintaxis me quedo con PugJs (lo unico a tener en cuenta es la indentacion, sin embargo con pug (jade) formatter se puede resolver dicha situacion). Tambien, creo que me puedo adaptar a cualquiera de los 3.

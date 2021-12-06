@@ -1,0 +1,34 @@
+<div class="container text-center">
+    <h2 class="mb-5">Historial</h2>
+    <% const haveProducts = productos.length > 0; %> <%
+    if(haveProducts){ %>
+
+        <div class="table-responsive">
+            <table class="table table-dark">
+                <tr style="color: yellow;" class="container text-center">
+                    <th>Articulo</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                </tr>
+                <% for (const producto of productos) {%>
+                <tr class="container text-center">
+                    <td class="col-4">
+                        <%=producto.title%>
+                    </td>
+                    <td class="col-4">
+                        <%=producto.price%>
+                    </td>
+                    <td class="col-4">
+                        <img src=<%=producto.thumbnail%> style="max-width: 20%;">
+                    </td>
+                </tr>
+                <%};%>
+            </table>
+        </div>
+        <% } else{ %>
+        <h3 class="alert alert-danger text-center">No hay productos</h1>
+            <% } %>
+    <a href="/">
+        <button class="btn btn-info">Formulario</button>
+    </a>
+</div>

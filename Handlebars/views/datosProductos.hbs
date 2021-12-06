@@ -1,0 +1,33 @@
+<div class="container text-center">
+
+  <h1>Productos</h1>
+
+  {{#if productos}}
+
+    <table class="container-fluid">
+      <tr class="container">
+        <th class="col-4">Title</th>
+        <th class="col-4">Price</th>
+        <th class="col-4">Imagen</th>
+      </tr>
+
+      {{#each productos}}
+        <tr class="container">
+          <td class="col-4">{{this.title}}</td>
+          <td class="col-4">${{this.price}}</td>
+          <td class="col-4"><img
+              style="max-width: 30px;"
+              src="{{this.thumbnail}}"
+            /></td>
+        </tr>
+      {{/each}}
+    </table>
+  {{else}}
+    <p class="fs-3">No hay productos</p>
+  {{/if}}
+
+  <a href="/">
+    <button class="btn btn-info">Cargar productos</button>
+  </a>
+
+</div>

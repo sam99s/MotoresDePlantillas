@@ -1,0 +1,15 @@
+<div class="container text-center" style="max-height: 80vh;">
+  <h1 class="mb-5">Cargar Producto</h1>
+  <form action="/productos" method="POST" class="container-fluid fs-3">
+    Title:
+    <input type="text" name="title" required class="col-12 mb-2" />
+    Price:
+    <input type="number" name="price" required class="col-12 mb-2" />
+    thumbnail:
+    <input type="text" name="thumbnail" required class="col-12 mb-2" />
+    <button class="btn btn-success">Añadir</button>
+  </form>
+  <a href="/productos">
+    <button class="btn btn-info mt-5">Ver productos</button>
+  </a>
+</div>

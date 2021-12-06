@@ -1,0 +1,15 @@
+extends layout
+
+block cargarProducto
+    div(class="container text-center")
+        h1 Cargar Producto
+        form(action="/productos" method="POST")
+            label(for="title") title 
+            input(type="text" name="title" class="col-12 mb-2" required)
+            label(for="price") price
+            input(type="number" name="price" class="col-12 mb-2" required)
+            label(for="thumbnail") thumbnail
+            input(type="text" name="thumbnail" class="col-12 mb-2" required)
+            button(class="btn btn-success") Añadir
+        a(href="/productos")
+            button(class="btn btn-info") Ver productos     

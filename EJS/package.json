@@ -1,0 +1,16 @@
+{
+  "name": "backend-coderhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "nodemon src/main.js"
+  },
+  "keywords": [],
+  "author": "sam99s",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
